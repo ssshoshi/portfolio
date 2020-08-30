@@ -9,108 +9,124 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
-    <section class="hero is-medium">
-      <!-- Hero head: will stick at the top -->
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <p class="navbar-item" id="logo"><<span class="typer" id="some-id" data-delay="150" data-colors="#1E4872" data-words="JS/>,JustinSchultz/>" data-loop="1"></span><span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="_" data-owner="some-id"></span</p>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start"></div>
+          <div class="navbar-end">
+            <div class="navbar-item"><a class="button is-outlined is-rounded" href="/">Contact</a></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="section hero">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <div class="content greeting">
+              <h1>Hello, I'm <span id="name">Justin</span>.</h1>
+              <h3>Web Developer | MI</h3>
+              <p>github \ linkedIn \ email</p>
             </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end">
-                <a class="navbar-item is-active">
-                  Home
-                </a>
-                <a class="navbar-item">
-                  Examples
-                </a>
-                <a class="navbar-item">
-                  Documentation
-                </a>
-                <span class="navbar-item">
-                  <a class="button is-primary is-inverted">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Download</span>
-                  </a>
-                </span>
+
+          </div>
+          <div class="column">
+            <div class="rectangle">
+              <img id="picture" src="img/unnamed.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section angled has-text-centered">
+      <div class="content">
+        <h1>My Recent Projects</h1>
+      </div>
+      
+    </section>
+    <section class="section projects has-text-centered">
+      <div class="container">
+        <div class="projects-grid">
+          <div class="columns is-multiline is-mobile">
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"><figure class="image is-3by2"></figure></div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"><figure class="image is-3by2"></figure></div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"><figure class="image is-3by2"></figure></div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"><figure class="image is-3by2"></figure></div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"><figure class="image is-3by2"></figure></div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"><figure class="image is-3by2"></figure></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="is-white">
+      <div class="container contact">
+        <script>
+          function onSubmit(token) {
+          document.getElementById("invisible-recaptcha-form").submit();
+          }
+        </script>
+        <div class="content has-text-centered">
+          <h1>Contact Me</h1>
+        </div>
+        <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="" method="POST">
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control is-expanded">
+                  <input class="input is-large" name="name" type="text" required="">
+                </div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control is-expanded">
+                  <input class="input is-large" name="email" type="email" required="">
+                </div>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-
-      <!-- Hero content: will be in the middle -->
-      <div class="hero-body ">
-        <div class="container has-text-centered">
-          <h1 class="title ">
-            Justin Schultz
-          </h1>
-          <h2 class="subtitle">
-            Web Developer
-          </h2>
-        </div>
-      </div>
-
-      <!-- Hero footer: will stick at the bottom -->
-      <div class="hero-foot">
-        <nav class="tabs">
-          <div class="container">
-            <ul>
-              <li class="is-active"><a>Overview</a></li>
-              <li><a>Modifiers</a></li>
-              <li><a>Grid</a></li>
-              <li><a>Elements</a></li>
-              <li><a>Components</a></li>
-              <li><a>Layout</a></li>
-            </ul>
+          <div class="columns is-centered">
+            <div class="column">
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control is-expanded">
+                  <textarea class="textarea is-large" name="message" rows="5" required=""></textarea>
+                </div>
+              </div>
+              <div class="field is-hidden">
+                <label class="is-hidden"></label>
+                <div class="control is-expanded is-hidden">
+                  <input class="is-hidden" name="bot_vortex" type="hidden">
+                </div>
+              </div>
+            </div>
           </div>
-        </nav>
+          <div class="columns is-centered">
+            <div class="column is-one-third">
+              <div class="field">
+                <div class="control">
+                  <div><div class="grecaptcha-badge" data-style="inline" style="width: 256px; height: 60px; position: fixed; visibility: hidden; display: block; transition: right 0.3s ease 0s; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy&amp;co=aHR0cHM6Ly9tYXR0ZmFybGV5LmNhOjQ0Mw..&amp;hl=en&amp;v=QVh-Tz10ahidjrORgXOS1oB0&amp;size=invisible&amp;badge=inline&amp;cb=i29hsj9m78ym" width="256" height="60" role="presentation" name="a-ss7ro1dt6vkq" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><button class="button is-outlined is-medium is-fullwidth is-rounded g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback="onSubmit" data-badge="inline">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
-    <section class="section">
-      <div class="content is-medium">
-        <h1>Hello World</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus,
-          nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat
-          odio, sollicitudin vel erat vel, interdum mattis neque.
-        </p>
-
-        <h2>Second level</h2>
-        <p>
-          Curabitur accumsan turpis pharetra augue tincidunt blandit. Quisque
-          condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium
-          urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem
-          rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque
-          nisl.
-        </p>
-
-        <ul>
-          <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-          <li>
-            Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.
-          </li>
-          <li>Ut non enim metus.</li>
-        </ul>
-      </div>
-    </section>
-
     <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
+      <div class="has-text-centered">
           <strong>Portfolio</strong> by
           <a href="https://jgthms.com">Justin Schultz</a>.
-        </p>
       </div>
+      <script src="js/index.js"></script>
+      <script async src="js/typer.js"></script>
     </footer>
   </body>
+
 </html>

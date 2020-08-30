@@ -1,10 +1,153 @@
-.hero {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.788),
-      rgba(20, 20, 2, 0.226)
-    ),
-    url(img/bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+body {
+  font-family: Roboto;
 }
+
+#logo {
+  font-size: 48px;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  color: #1E4872;
+}
+
+.navbar {
+  padding: 1.2rem 0;
+}
+
+.hero {
+  margin-bottom: 15rem;
+}
+
+.footer {
+  min-width: 100%;
+  bottom: 0;
+}
+
+.rectangle {
+  background-origin: content-box;
+  width: 358px;
+  height: 437px;
+  background: #1E4872;
+  border-radius: 5px;
+}
+
+#picture {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+}
+
+.section {
+  padding: 5rem;
+}
+
+.greeting {
+  padding: 60px 35px;
+}
+
+/* .content {
+  padding-left: 5rem;
+} */
+
+#name {
+  color: #1E4872;
+}
+
+h3 {
+  margin-top: 0 !important;
+}
+
+.angled {
+  height: 500px;
+  background: #1E4872;
+  color: #fff;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 5rem;
+  padding-top: 10rem;
+}
+
+.angled:before {
+  background: inherit;
+  top: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(5deg);
+  transform-origin: 100%;
+  z-index: 1;
+}
+
+.projects {
+  margin-top: -20rem;
+}
+
+figure {
+  background: white;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  border-radius: 8px;
+}
+
+.angled h1 {
+  margin-top: 5rem;
+  color: white;
+}
+
+.button.is-outlined {
+  background-color: transparent;
+  border-color:  #1E4872;
+  color:  #1E4872;
+}
+
+.button.is-outlined:hover {
+  background-color:#1E4872;
+  color: white;
+  -webkit-transition: color 0.5s;
+  -moz-transition:    color 0.5s;
+  -ms-transition:     color 0.5s;
+  -o-transition:      color 0.5s;
+  transition:         color 0.5s;
+}
+
+.navbar .navbar-menu a.button.is-outlined, button.is-outlined {
+  border-width: 2px;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 1.2rem;
+}
+
+.contact {
+  max-width: 640px; 
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.contact form input {
+  border-color: #E6ECF8;
+  color: #141c3a;
+  box-shadow: none;
+  font-weight: 300;
+}
+
+.textarea {
+  border-color: #E6ECF8;
+  color: #141c3a;
+  box-shadow: none;
+  font-weight: 300;
+}
+
+.contact.content h1 {
+  font-size: 2em;
+  margin-bottom: 4em;
+}
+
+/* .projects {
+  background: white;
+  background-image: radial-gradient(black 1px, transparent 0);
+  background-size: 60px 60px;
+  z-index:-1;
+
+} */
