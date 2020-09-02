@@ -17,7 +17,7 @@
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-start"></div>
           <div class="navbar-end">
-            <div class="navbar-item"><a class="button is-outlined is-rounded" href="/">Contact</a></div>
+            <div class="navbar-item"><a class="button is-outlined is-rounded" href="#contact" onclick="scrollTo()">Contact</a></div>
           </div>
         </div>
       </div>
@@ -63,16 +63,11 @@
       </div>
     </section>
     <section class="is-white">
-      <div class="container contact">
-        <script>
-          function onSubmit(token) {
-          document.getElementById("invisible-recaptcha-form").submit();
-          }
-        </script>
+      <div class="container contact" id="contact">
         <div class="content has-text-centered">
           <h1>Contact Me</h1>
         </div>
-        <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="" method="POST">
+        <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="" method="POST" netlify>
           <div class="columns is-centered">
             <div class="column is-half">
               <div class="field">
