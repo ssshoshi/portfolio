@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Justin Schultz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
@@ -12,12 +15,15 @@
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <p class="navbar-item" id="logo"><<span class="typer" id="some-id" data-delay="150" data-colors="#1E4872" data-words="JS/>,JustinSchultz/>" data-loop="1"></span><span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="_" data-owner="some-id"></span</p>
+          <a class="navbar-item" href="http://www.justinschultz.dev">
+            <img class="image" src="img/Logo.svg" alt="Justin Schultz | Web Developer" height="48">
+          </a>
+          <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a>
         </div>
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-start"></div>
           <div class="navbar-end">
-            <div class="navbar-item"><a class="button is-outlined is-rounded" href="#contact" onclick="scrollTo()">Contact</a></div>
+            <div class="navbar-item"><a class="button is-outlined is-rounded" href="#contact">Contact</a></div>
           </div>
         </div>
       </div>
@@ -26,30 +32,27 @@
       <div class="container">
         <div class="columns is-vcentered">
           <div class="column">
-            <div class="content greeting">
-              <h1>Hello, I'm <span id="name">Justin</span>.</h1>
-              <h3>Web Developer | MI</h3>
-              <p>github \ linkedIn \ email</p>
+            <div class="content has-text-centered-mobile ">
+              <h1 class="title is-2 is-size-3-mobile">Hello, I'm <span id="name" style="display: inline-block" class="animate__animated animate__tada">Justin!</span></h1>
+              <h2 class="subtitle is-4 is-size-5-mobile">Web Developer | MI</h2>
             </div>
 
           </div>
           <div class="column">
-            <div class="rectangle">
-              <img id="picture" src="img/unnamed.png" alt="">
-            </div>
-
+            <figure class="rectangle animate__animated animate__slideInRight animate__faster">
+                <img id="picture" class="image is-16x9 animate__animated animate__slideInRight" src="img/unnamed.png" alt="">
+              </figure>
           </div>
         </div>
       </div>
     </section>
-    <section class="section angled has-text-centered">
-      <div class="content">
-        <h1>My Recent Projects</h1>
-      </div>
-      
-    </section>
+    <div class="angled has-text-centered">
+    </div>
     <section class="section projects has-text-centered">
       <div class="container">
+        <div class="content mb-6">
+          <h1 class="title is-2 has-text-white is-size-3-mobile">My Recent Projects</h1>
+        </div>
         <div class="projects-grid">
           <div class="columns is-multiline is-mobile">
             <div class="column is-12-mobile is-half-tablet is-one-third-desktop"><figure class="image is-3by2"></figure></div>
@@ -62,63 +65,42 @@
         </div>
       </div>
     </section>
-    <section class="is-white">
+    <section class="section is-white">
       <div class="container contact" id="contact">
         <div class="content has-text-centered">
-          <h1>Contact Me</h1>
+          <h1 class="title is-2 is-size-3-mobile">Contact Me</h1>
         </div>
-        <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="" method="POST" netlify>
-          <div class="columns is-centered">
-            <div class="column is-half">
-              <div class="field">
-                <label class="label">Name</label>
-                <div class="control is-expanded">
-                  <input class="input is-large" name="name" type="text" required="">
-                </div>
-              </div>
-            </div>
-            <div class="column is-half">
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control is-expanded">
-                  <input class="input is-large" name="email" type="email" required="">
-                </div>
-              </div>
-            </div>
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text">
           </div>
-          <div class="columns is-centered">
-            <div class="column">
-              <div class="field">
-                <label class="label">Message</label>
-                <div class="control is-expanded">
-                  <textarea class="textarea is-large" name="message" rows="5" required=""></textarea>
-                </div>
-              </div>
-              <div class="field is-hidden">
-                <label class="is-hidden"></label>
-                <div class="control is-expanded is-hidden">
-                  <input class="is-hidden" name="bot_vortex" type="hidden">
-                </div>
-              </div>
-            </div>
+        </div>
+        
+        <div class="field">
+          <label class="label">Email</label>
+          <input class="input" type="email">
+        </div>
+        
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea"></textarea>
           </div>
-          <div class="columns is-centered">
-            <div class="column is-one-third">
-              <div class="field">
-                <div class="control">
-                  <div>
-                  <button class="button is-outlined is-medium is-fullwidth is-rounded g-recaptcha">Submit</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
+        </div>
+  
+        <div class="field is-grouped">
+            <button class="button is-outlined is-rounded is-fullwidth">Submit</button>
+        </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer section is-small has-text-centered">
+      <img  src="img/Logo-white.svg" height="48" >
       <div class="has-text-centered">
-          <strong>Portfolio</strong> by
-          <a href="https://jgthms.com">Justin Schultz</a>.
+          Portfolio by Justin Schultz
+      </div>
+      <div class="bulma has-text-centered">
+        <a href="https://bulma.io"><img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="163" height="31" title="" style=""></a>
       </div>
       <script src="js/index.js"></script>
       <script async src="js/typer.js"></script>
