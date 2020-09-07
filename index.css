@@ -1,13 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Lato;
   background: linear-gradient(90deg, white 21px, transparent 1%) center, linear-gradient(white 21px, transparent 1%) center, black;
   background-size: 22px 22px;
   background-attachment: fixed;
   width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 .navbar {
@@ -53,22 +57,11 @@ img[src$=".svg"] {
   } 
   .greeting {
     text-align: center;
-  }
-  
+  } 
 }
-
-
-/* .section {
-  padding: 5rem;
-} */
-
 .greeting {
   padding: 60px 35px;
 }
-
-/* .content {
-  padding-left: 5rem;
-} */
 
 #name {
   color: #1E4872;
@@ -100,17 +93,38 @@ h3 {
   transform-origin: 100%;
 }
 
-
-
 .projects {
   margin-top: -35em;
   background: #1E4872;
-  z-index: -1;
 }
 
+.overlay {
+  background-color: #062544;
+}
+
+.projects .projects-grid figure { position: relative; overflow: hidden; border-radius: 12px; }
+.projects .projects-grid figure h1, .projects .projects-grid figure .button {z-index: 2}
+.projects .projects-grid figure img.thumb { -webkit-transform: scale(1); transform: scale(1); -webkit-transition: .25s ease-in-out; transition: .25s ease-in-out; }
+
+.projects .projects-grid .overlay, .projects .projects-grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  --webkit-transition: .45s ease-in-out;
+  transition: .45s ease-in-out;
+}
+
+.projects .projects-grid figure:hover .overlay, .projects .projects-grid figure:hover figcaption {
+  opacity: 1;
+}
+
+.projects .projects-grid figure figcaption { display: -webkit-box; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; -webkit-box-pack: center; justify-content: center; padding: 0rem 3rem; color: #fff; z-index: 3; }
 figure {
   background: white;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .angled h1 {
@@ -179,12 +193,15 @@ figure {
   font-weight: 300;
 }
 
+body > section.section.projects.has-text-centered > div > div.projects-grid > div > div:nth-child(1) > figure > img {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
 .contact.content h1 {
   font-size: 2em;
   margin-bottom: 4em;
 }
-
-
 
 .footer {
   background-color: #1E4872;
