@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: Lato;
+  font-family: 'Lato', Roboto;
   background: linear-gradient(90deg, white 21px, transparent 1%) center, linear-gradient(white 21px, transparent 1%) center, black;
   background-size: 22px 22px;
   background-attachment: fixed;
@@ -103,12 +103,13 @@ h3 {
 }
 
 .overlay {
-  background-color: #062544;
+  background-color: #012547;
 }
 
 .projects .projects-grid figure { position: relative; overflow: hidden; border-radius: 12px; }
 .projects .projects-grid figure h1, .projects .projects-grid figure .button {z-index: 2}
 .projects .projects-grid figure img.thumb { -webkit-transform: scale(1); transform: scale(1); -webkit-transition: .25s ease-in-out; transition: .25s ease-in-out; }
+.projects .projects-grid figure:hover img { -webkit-transform: scale(1.1); transform: scale(1.1); }
 
 .projects .projects-grid .overlay, .projects .projects-grid figcaption {
   position: absolute;
@@ -129,6 +130,10 @@ h3 {
 figure {
   background: white;
   border-radius: 12px;
+}
+
+.github {
+  border-radius: 100%;
 }
 
 .angled h1 {
