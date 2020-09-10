@@ -14,9 +14,6 @@ body {
   overflow-x: hidden; 
 }
 
-button {
-  display: inline-block;
-}
 
 .navbar {
   padding: 1.2rem 0;
