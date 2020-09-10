@@ -38,7 +38,10 @@
             <div class="content has-text-centered-mobile ">
               <h1 class="title is-2 is-size-3-mobile">Hello, I'm <span id="name" style="display: inline-block" class="animate__animated animate__tada">Justin!</span></h1>
               <h2 class="subtitle is-4 is-size-5-mobile">Web Developer | MI</h2>
-              <a class="subtitle is-6" style="font-style: italic" href="https://github.com/ssshoshi"><i class="fab fa-github"></i>github</a>
+              <div class="social">
+                <a class="button is-outlined" style="border-radius: 100%;" href="https://github.com/ssshoshi"><span class="icon"><i class="fab fa-github"></i></span></a>
+                <a class="button is-outlined" style="border-radius: 100%;" href="https://www.linkedin.com/in/justinschultzdev/"><span class="icon"><i class="fab fa-linkedin-in"></i></i></span></a>
+              </div>
             </div>
 
           </div>
@@ -55,7 +58,7 @@
     <section class="section projects has-text-centered">
       <div class="container">
         <div class="content mb-6">
-          <h1 class="title is-2 has-text-white is-size-3-mobile">My Recent Projects</h1>
+          <h1 class="title is-3 has-text-white">My Recent Projects</h1>
         </div>
         <div class="projects-grid">
           <div class="columns is-multiline is-mobile">
@@ -68,6 +71,7 @@
                   <div class="is-grouped">
                     <a href="https://chrome.google.com/webstore/detail/home-scanner/jemdonaaoheinklbabmnaolfjdcllfok?hl=en&authuser=0" target="blank" class="button is-outlined is-rounded">View Website <i class="fas fa-external-link-alt ml-2"></i></a>
                     <a class="button is-outlined github" href="https://github.com/ssshoshi/Homescanner" target="_blank"><span class="icon"><i class="fab fa-github"></i></span></a>
+                    <a class="button is-outlined github has-tooltip-multiline"  data-tooltip="HTML, CSS, Javascript" target="_blank"><span class="icon"><i class="fas fa-cubes"></i></i></span></a>
                   </div>
                   <div class="overlay"></div>
                 </figcaption>
@@ -108,24 +112,24 @@
     <section class="section is-white">
       <form class="container contact" id="contact" method="POST" netlify>
         <div class="content has-text-centered">
-          <h1 class="title is-2 is-size-3-mobile">Contact Me</h1>
+          <h1 class="title is-3">Contact Me</h1>
         </div>
         <div class="field">
           <label class="label">Name</label>
           <div class="control">
-            <input class="input" type="text">
+            <input class="input is-rounded" type="text">
           </div>
         </div>
         
         <div class="field">
           <label class="label">Email</label>
-          <input class="input" type="email">
+          <input class="input is-rounded" type="email">
         </div>
         
         <div class="field">
           <label class="label">Message</label>
           <div class="control">
-            <textarea class="textarea"></textarea>
+            <textarea class="textarea is-rounded"></textarea>
           </div>
         </div>
   
@@ -138,13 +142,14 @@
       </form>
     </section>
     <footer class="footer section is-small has-text-centered">
-      <img  src="img/Logo-white.svg" height="48" >
+      <img src="img/Logo-white.svg" height="48" class="mb-3">
       <div class="has-text-centered">
           Portfolio by Justin Schultz
       </div>
       <div class="bulma has-text-centered">
         <a href="https://bulma.io"><img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="163" height="31" title="" style=""></a>
       </div>
+      <div><i class="fas fa-plus mr-2"></i> <i class="fas fa-mug-hot" style="font-size: 2rem;"></i></div>
       <script src="js/index.js"></script>
       <script async src="js/typer.js"></script>
     </footer>

@@ -173,6 +173,7 @@ figure {
 }
 
 .contact {
+  margin-top: 6rem;
   padding-bottom: 5rem;
   background: white;
   max-width: 50vw;
@@ -195,11 +196,11 @@ figure {
   font-weight: 300;
 }
 
-.textarea {
-  border-color: #E6ECF8;
+textarea {
   color: #141c3a;
   box-shadow: none;
   font-weight: 300;
+  border-radius: 20px !important;
 }
 
 body > section.section.projects.has-text-centered > div > div.projects-grid > div > div:nth-child(1) > figure > img {
