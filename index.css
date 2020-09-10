@@ -215,5 +215,5 @@ body > section.section.projects.has-text-centered > div > div.projects-grid > di
 }
 
 .button .is-fullwidth {
-    display: block;
+    display: inline-block;
 }
