@@ -220,3 +220,27 @@ body > section.section.projects.has-text-centered > div > div.projects-grid > di
     line-height: 0 !important;
 
 }
+
+
+@media screen and (min-width: 768px) {
+  .middle {
+  transform: translateY(100px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .middle.aos-animate {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .last {
+  transform: translateX(100px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .last.aos-animate {
+    transform: translateX(0);
+  }
+}
+
