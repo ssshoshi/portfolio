@@ -216,4 +216,5 @@ body > section.section.projects.has-text-centered > div > div.projects-grid > di
 
 .is-fullwidth {
     display: inline-flex;
+    align-items: center; 
 }
