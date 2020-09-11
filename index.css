@@ -214,6 +214,6 @@ body > section.section.projects.has-text-centered > div > div.projects-grid > di
   background-color: #1E4872;
 }
 
-.button .is-fullwidth {
-    display: inline-block;
+.is-fullwidth {
+    display: inline-flex;
 }
