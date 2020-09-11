@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
@@ -62,7 +63,7 @@
         </div>
         <div class="projects-grid">
           <div class="columns is-multiline is-mobile">
-            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop" data-aos="fade-right">
               <figure class="image is-3by2 is-3by3-mobile">
                 <img class="thumb" src="img/homescanner.png" alt="">
                 <figcaption>
@@ -76,7 +77,7 @@
                 </figcaption>
               </figure>
             </div>
-            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop" data-aos="fade-left">
               <figure class="image is-3by2 is-3by3-mobile">
                 <img class="thumb" src="img/HESRecipes.png" alt="">
                 <figcaption>
@@ -90,7 +91,7 @@
                 </figcaption>
               </figure>
             </div>
-            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop" data-aos="fade-right">
               <figure class="image is-3by2 is-3by3-mobile">
                 <img class="thumb" src="img/wrscreenshots.png" alt="">
                 <figcaption>
@@ -152,6 +153,10 @@
       <script src="js/index.js"></script>
       <script async src="js/typer.js"></script>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 
 </html>
