@@ -23,20 +23,13 @@ body {
   margin-bottom: 15rem;
 }
 
+.hero {
+  height: 66vh;
+}
+
 @media screen and (min-width: 700px) {
   .about {
     max-width: 50%;
-  }
-}
-@media screen and (min-width: 1367px) {
-  .hero {
-    height: 100vh;
-  }
-
-  .vertical-center {
-    position: absolute;
-    top: 50%;
-    transform: translate(50%, -50%);
   }
 }
 
