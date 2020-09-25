@@ -3,24 +3,41 @@ html {
 }
 
 body {
-  font-family: 'Lato', Roboto;
-  background: linear-gradient(90deg, white 21px, transparent 1%) center, linear-gradient(white 21px, transparent 1%) center, black;
+  font-family: "Lato", Roboto;
+  background: linear-gradient(90deg, white 21px, transparent 1%) center,
+    linear-gradient(white 21px, transparent 1%) center, black;
   background-size: 22px 22px;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
-
 
 .navbar {
   padding: 1.2rem 0;
 }
 
-.hero {
+.about {
   margin-bottom: 15rem;
+}
+
+@media screen and (min-width: 700px) {
+  .about {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1367px) {
+  .hero {
+    height: 100vh;
+  }
+
+  .vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
 }
 
 .footer {
@@ -33,20 +50,18 @@ body {
   max-height: 100px;
 }
 
-img[src$=".svg"] { 
-  width: 70px !important; 
-  height: 70px !important; 
+img[src$=".svg"] {
+  width: 70px !important;
+  height: 70px !important;
 }
 
 .rectangle {
   background-origin: content-box;
-  background: #1E4872;
+  background: #1e4872;
   border-radius: 5px;
 }
 
 #picture {
-  margin-top: 2rem;
-  margin-left: 2rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 5px;
 }
@@ -54,18 +69,17 @@ img[src$=".svg"] {
 @media (max-width: 768px) {
   #picture {
     margin-top: 2rem;
-    margin-left: 0;
-  } 
+  }
   .greeting {
     text-align: center;
-  } 
+  }
 }
 .greeting {
   padding: 60px 35px;
 }
 
 #name {
-  color: #1E4872;
+  color: #1e4872;
 }
 
 h3 {
@@ -74,7 +88,7 @@ h3 {
 
 .angled {
   height: 500px;
-  background: #1E4872;
+  background: #1e4872;
   color: #fff;
   position: relative;
   margin-bottom: 5rem;
@@ -84,7 +98,7 @@ h3 {
 .angled:before {
   background: inherit;
   top: 0;
-  content: '';
+  content: "";
   display: block;
   height: 50%;
   left: 0;
@@ -96,34 +110,62 @@ h3 {
 
 .projects {
   margin-top: -35em;
-  background: #1E4872;
+  background: #1e4872;
 }
 
 .overlay {
   background-color: #012547;
 }
 
-.projects .projects-grid figure { position: relative; overflow: hidden; border-radius: 12px; }
-.projects .projects-grid figure h1, .projects .projects-grid figure .button {z-index: 2}
-.projects .projects-grid figure img.thumb { -webkit-transform: scale(1); transform: scale(1); -webkit-transition: .25s ease-in-out; transition: .25s ease-in-out; }
-.projects .projects-grid figure:hover img { -webkit-transform: scale(1.1); transform: scale(1.1); }
+.projects .projects-grid figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.projects .projects-grid figure h1,
+.projects .projects-grid figure .button {
+  z-index: 2;
+}
+.projects .projects-grid figure img.thumb {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.projects .projects-grid figure:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
-.projects .projects-grid .overlay, .projects .projects-grid figcaption {
+.projects .projects-grid .overlay,
+.projects .projects-grid figcaption {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
-  --webkit-transition: .45s ease-in-out;
-  transition: .45s ease-in-out;
+  --webkit-transition: 0.45s ease-in-out;
+  transition: 0.45s ease-in-out;
 }
 
-.projects .projects-grid figure:hover .overlay, .projects .projects-grid figure:hover figcaption {
+.projects .projects-grid figure:hover .overlay,
+.projects .projects-grid figure:hover figcaption {
   opacity: 1;
 }
 
-.projects .projects-grid figure figcaption { display: -webkit-box; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; -webkit-box-pack: center; justify-content: center; padding: 0rem 3rem; color: #fff; z-index: 3; }
+.projects .projects-grid figure figcaption {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0rem 3rem;
+  color: #fff;
+  z-index: 3;
+}
 figure {
   background: white;
   border-radius: 12px;
@@ -140,21 +182,22 @@ figure {
 
 .button.is-outlined {
   background-color: white;
-  border-color:  #1E4872;
-  color:  #1E4872;
+  border-color: #1e4872;
+  color: #1e4872;
 }
 
 .button.is-outlined:hover {
-  background-color:#1E4872;
+  background-color: #1e4872;
   color: white;
   -webkit-transition: color 0.5s;
-  -moz-transition:    color 0.5s;
-  -ms-transition:     color 0.5s;
-  -o-transition:      color 0.5s;
-  transition:         color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
-.navbar .navbar-menu a.button.is-outlined, button.is-outlined {
+.navbar .navbar-menu a.button.is-outlined,
+button.is-outlined {
   border-width: 2px;
   font-weight: 400;
   font-size: 18px;
@@ -178,7 +221,7 @@ figure {
 
 @media (max-width: 768px) {
   .contact {
-    max-width:90%;
+    max-width: 90%;
   }
 }
 
@@ -187,7 +230,7 @@ figure {
 }
 
 .contact form input {
-  border-color: #E6ECF8;
+  border-color: #e6ecf8;
   color: #141c3a;
   box-shadow: none;
   font-weight: 300;
@@ -200,9 +243,16 @@ textarea {
   border-radius: 20px !important;
 }
 
-body > section.section.projects.has-text-centered > div > div.projects-grid > div > div:nth-child(1) > figure > img {
-    overflow: hidden;
-    border-radius: 12px;
+body
+  > section.section.projects.has-text-centered
+  > div
+  > div.projects-grid
+  > div
+  > div:nth-child(1)
+  > figure
+  > img {
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .contact.content h1 {
@@ -211,20 +261,18 @@ body > section.section.projects.has-text-centered > div > div.projects-grid > di
 }
 
 .footer {
-  background-color: #1E4872;
+  background-color: #1e4872;
 }
 
 .is-fullwidth {
-    display: inline-flex;
-    align-items: center; 
-    line-height: 0 !important;
-
+  display: inline-flex;
+  align-items: center;
+  line-height: 0 !important;
 }
-
 
 @media screen and (min-width: 768px) {
   .middle {
-  transform: translateY(100px);
+    transform: translateY(100px);
   }
 }
 @media screen and (min-width: 768px) {
@@ -235,7 +283,7 @@ body > section.section.projects.has-text-centered > div > div.projects-grid > di
 
 @media screen and (min-width: 768px) {
   .last {
-  transform: translateX(100px);
+    transform: translateX(100px);
   }
 }
 @media screen and (min-width: 768px) {
@@ -243,4 +291,3 @@ body > section.section.projects.has-text-centered > div > div.projects-grid > di
     transform: translateX(0);
   }
 }
-
