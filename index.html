@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
   content="Justin Schultz | Web Developer">
     <title>Justin Schultz | Web Developer</title>
     <link href="img/favicon-32.png" rel="shortcut icon" type="image/png">
-    <script src="https://kit.fontawesome.com/fa20418ab8.js" crossorigin="anonymous"></script>
+    <script src="dist/js/fa20418ab8.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/bulma.min.css"/>
     <link rel="stylesheet" href="dist/css/animate.min.css" />
@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="column">
-            <figure class="image">
+            <figure>
               <img id="picture" src="img/unnamed.webp" alt="Justin Schultz">
             </figure>
           </div>
@@ -89,7 +89,7 @@
         <div class="projects-grid">
           <div class="columns is-multiline is-mobile">
             <div class="column is-12-mobile is-half-tablet is-one-third-desktop" data-aos="fade-right">
-              <figure class="image">
+              <figure class="image is-3by2">
                 <img class="thumb" lazyload src="img/homescanner.webp" alt="Home Scanner">
                 <figcaption>
                   <h1 class="title is-size-3 is-spaced is-size-5-mobile" style="color: #5186B9">Home Scanner</h1>
@@ -103,7 +103,7 @@
               </figure>
             </div>
             <div class="column is-12-mobile is-half-tablet is-one-third-desktop middle" data-aos="fade-left">
-              <figure class="image">
+              <figure class="image is-3by2">
                 <img class="thumb" lazyload src="img/HESRecipes.webp" alt="HES Recipes">
                 <figcaption>
                   <h1 class="title is-size-3 is-spaced is-size-5-mobile" style="color: #5186B9">HES Recipes</h1>
@@ -117,7 +117,7 @@
               </figure>
             </div>
             <div class="column is-12-mobile is-half-tablet is-one-third-desktop last" data-aos="fade-right">
-              <figure class="image">
+              <figure class="image is-3by2">
                 <img class="thumb" lazyload src="img/wrscreenshots.webp" alt="Work Reduce Screenshots">
                 <figcaption>
                   <h1 class="title is-size-3 is-spaced is-size-5-mobile" style="color: #5186B9">Work Reduce Screenshots</h1>
@@ -140,22 +140,29 @@
           <h1 class="title is-3">Contact Me</h1>
         </div>
         <div class="field">
-          <label class="label">Name</label>
-          <div class="control">
-            <input class="input is-rounded" type="text" required>
-          </div>
+          <label class="label">
+            Name
+            <div class="control">
+              <input class="input is-rounded" type="text" required>
+            </div>
+          </label>
         </div>
         
         <div class="field">
-          <label class="label">Email</label>
-          <input class="input is-rounded" type="email" required>
+          <label class="label">
+            Email
+            <input class="input is-rounded" type="email" required>
+          </label>
         </div>
         
         <div class="field">
-          <label class="label">Message</label>
-          <div class="control">
-            <textarea class="textarea is-rounded" required></textarea>
-          </div>
+          <label class="label">
+            Message
+            <div class="control">
+              <textarea class="textarea is-rounded" required></textarea>
+            </div>
+          </label>
+  
         </div>
   
         <div class="field">
